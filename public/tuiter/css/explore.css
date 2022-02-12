@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+body {
+  background-color: black;
+  margin: 0 16px 0 16px;
+  border: 1px solid rgb(110, 118, 125);
+}
+
+.wd-search-bar-container {
+  /* border: 1px solid red; */
+  padding-left: 16px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wd-search-bar {
+  background-color: rgb(47, 51, 54);
+  height: 40px;
+  border-radius: 15px;
+  /* padding-left: 2%; */
+  /* padding-left: 10px; */
+  border: none;
+  flex-grow: 1;
+  font-size: 20px;
+  text-align: center;
+}
+
+.fa {
+  color: rgb(110, 118, 125);
+  /* border: 1px solid red; */
+}
+
+.fa-search {
+  position: absolute;
+  font-size: 25px;
+  left: 25px;
+}
+
+.fa-cog {
+  color: rgb(29, 161, 242);
+  margin: 0 12px 0 35px;
+  font-size: 30px;
+}
+
+.wd-explore-tab-group {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(110, 118, 125);
+}
+
+.wd-explore-tab {
+  font-size: 16px;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: 900;
+  color: rgb(110, 118, 125);
+}
+
+.wd-explore-tab-selected {
+  color: rgb(29, 161, 242);
+  border-bottom: 3px solid rgb(29, 161, 242);
+}
+
+.wd-space {
+  height: 10px;
+  background-color: rgb(49, 47, 47);
+}
+
+.wd-article {
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px solid rgb(110, 118, 125);
+}
+
+.wd-topic {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-number-tweets {
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+.wd-title {
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+  color: white;
+}
+.wd-read-more {
+  color: rgb(110, 118, 125);
+  float: right;
+  padding-right: 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wd-article-img {
+  height: 100px;
+  width: 100px;
+  margin-right: 16px;
+  border-radius: 10px;
+}
+.wd-official-account-handle {
+  color: white;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.wd-article-img-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -14,90 +14,111 @@
     <title>Explore</title>
   </head>
   <body>
-    <div class="container mt-2">
+    <!-- <h2>Hiding and showing responsive content</h2> -->
+    <div class="d-block d-sm-none fa-2x">XS</div>
+    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+    <div class="d-none d-xxl-block fa-2x">XXL</div>
+    <div class="container mt-3">
       <div class="row">
         <!-- NAVIGATION LINKS -->
+        <!-- <div class="col-1"></div> -->
         <div class="col-3 wd-navigation-links-container">
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fab fa-twitter"></i>
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fab fa-twitter fa-inverse"></i>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-home"></i> &nbsp;Home
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-home fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Home</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action active">
-            <i class="fa fa-hashtag"></i> &nbsp;Explore
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-hashtag fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Explore</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-bell"></i> &nbsp;Notifications
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-bell fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Notifications</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-envelope"></i> &nbsp;Messages
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-envelope fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Messages</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-bookmark"></i> &nbsp;Bookmarks
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-bookmark fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Bookmarks</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-list"></i> &nbsp;Lists
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-list fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Lists</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
-            <i class="fa fa-user"></i> &nbsp;Profile
+          <a href="#" class="list-group-item list-group-item-action text-light">
+            <i class="fa fa-user fa-inverse"></i> &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> Profile</span>
           </a>
-          <a href="#" class="list-group-item list-group-item-action">
+          <a href="#" class="list-group-item list-group-item-action text-light">
             <span class="fa-stack fa-2x">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-ellipsis-h fa-inverse fa-stack-1x"></i>
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fa fa-ellipsis-h fa-stack-1x text-dark"></i>
             </span>
-            &nbsp;More
+            &nbsp;
+            <span class="d-none d-xl-inline d-lg-none"> More</span>
           </a>
           <div class="row wd-flex-and-center mt-2">
-            <div class="btn btn-primary wd-tweet-btn">Tweet</div>
+            <div class="btn wd-tweet-btn"><b>Tweet</b></div>
           </div>
         </div>
         <!-- MAIN FEED -->
-        <div class="col-xxl-5 col-xl-5 col-md-9 wd-twitter-feed-container">
+        <div class="col-5 wd-twitter-feed-container">
           <!-- SEARCH BAR -->
           <div class="row">
-            <div class="col-10 wd-feed-search-bar">
+            <div class="col-10 wd-feed-search-bar bg-dark">
               <div class="input-group">
                 <span class="input-group-append">
                   <button class="btn" type="button">
-                    <i class="fa fa-search"></i>
+                    <i class="fa fa-search text-secondary"></i>
                   </button>
                 </span>
                 <input
-                  class="form-control"
+                  class="form-control bg-dark"
                   type="search"
                   placeholder="Search Twitter"
                 />
               </div>
             </div>
             <div class="col-2 wd-settings-container wd-flex-and-center">
-              <a href="#"><i class="fa fa-cog fa-2x" aria-hidden="true"></i></a>
+              <a href="#"
+                ><i class="fa fa-inverse fa-cog fa-2x" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
           <!-- TABS -->
-          <div class="row">
-            <ul class="nav nav-tabs mt-2">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">For You</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Trending</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sports</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Entertainment</a>
-              </li>
+          <div class="row mt-2">
+            <ul class="nav nav-pills" role="tablist">
+              <span class="nav-item active">
+                <a class="nav-link text-secondary" href="#">For You</a>
+              </span>
+              <span class="nav-item">
+                <a class="nav-link text-secondary" href="#">Trending</a>
+              </span>
+              <span class="nav-item">
+                <a class="nav-link text-secondary" href="#">COVID-19</a>
+              </span>
+              <span class="nav-item">
+                <a class="nav-link text-secondary" href="#">News</a>
+              </span>
+              <span class="nav-item">
+                <a class="nav-link text-secondary" href="#">Sports</a>
+              </span>
+              <span class="nav-item wd-tab-active">
+                <a class="nav-link" href="#"> Entertainment </a>
+              </span>
             </ul>
           </div>
           <!-- TESLA SPACESHIP IMG -->
-          <div class="row position-relative">
-            <div class="wd-main-feed-img-container mt-2">
+          <div class="row position-relative" id="wd-something">
+            <div class="wd-main-feed-img-container">
               <img src="../images/spacex_starship.jpeg" alt="SpaceX Ship" />
             </div>
             <div class="position-absolute bottom-0 start-0 ps-3">
@@ -108,12 +129,12 @@
           <div class="row wd-explore-story-container">
             <div class="col-10 wd-explore-feed-text-container">
               <div class="text-muted">Web Development</div>
-              <div>
+              <div class="text-light">
                 <b>ReactJS</b>&nbsp;
                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                 <span class="text-muted">&nbsp;- 2h</span>
               </div>
-              <div>
+              <div class="text-light">
                 <b>
                   ReactJS is a component based front end library that makes it
                   very easy to build Single Page Applications or SPAs
@@ -130,13 +151,13 @@
           </div>
           <div class="row wd-explore-story-container">
             <div class="col-10 wd-explore-feed-text-container">
-              <div>
+              <div class="text-light">
                 <b>JavaScript</b>&nbsp;
                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                 <span class="text-muted">&nbsp;- 2h</span>
               </div>
               <div>
-                <b>
+                <b class="text-light">
                   JavaScript is a programming language that can run on browsers
                   as well as desktops
                 </b>
@@ -150,7 +171,7 @@
           <div class="row wd-explore-story-container">
             <div class="col-10 wd-explore-feed-text-container">
               <div class="text-muted">Web Development</div>
-              <div>
+              <div class="text-light">
                 <b> jQuery </b>
               </div>
               <div class="text-muted">123k Tweets</div>
@@ -167,7 +188,7 @@
             <div class="col-10 wd-explore-feed-text-container">
               <div class="text-muted">Web Development</div>
 
-              <div>
+              <div class="text-light">
                 <b>NodeJS</b>&nbsp;
                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                 <span class="text-muted">&nbsp;- 2h</span>
@@ -186,100 +207,112 @@
 
         <!-- FOLLOW RECOMMENDATIONS -->
         <div
-          class="col-4 wd-who-to-follow-container d-none d-lg-block d-xl-block d-xxl-block"
+          class="col-4 wd-who-to-follow-container rounded d-none d-lg-inline d-md-none"
         >
           <ul class="list-group">
-            <li class="list-group-item"><b>Who to Follow</b></li>
+            <li class="list-group-item bg-dark text-light">
+              <b>Who to Follow</b>
+            </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark text-light">
               <div class="row wd-who-to-follow-cell">
                 <div class="col-2 wd-flex-and-center">
-                  <img src="../images/java.jpeg" alt="" />
+                  <img
+                    class="rounded-circle"
+                    src="../images/java.jpeg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-7">
                   <b>Java</b> &nbsp;
                   <i class="fa fa-check-circle" aria-hidden="true"></i><br />
-                  @Java
+                  <span class="text-secondary">@Java</span>
                 </div>
                 <div class="col-3 wd-flex-and-center">
-                  <div class="btn btn-primary">Follow</div>
+                  <div class="btn btn-light btn-sm">Follow</div>
                 </div>
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark text-light">
               <div class="row wd-who-to-follow-cell">
                 <div class="col-2 wd-flex-and-center">
-                  <img src="../images/relativity_space.jpeg" alt="" />
+                  <img
+                    class="rounded-circle"
+                    src="../images/relativity_space.jpeg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-7">
                   <b>Relativity Space</b> &nbsp;
                   <i class="fa fa-check-circle" aria-hidden="true"></i><br />
-                  @relativityspace
+                  <span class="text-secondary">@relativityspace</span>
                 </div>
                 <div class="col-3 wd-flex-and-center">
-                  <div class="btn btn-primary">Follow</div>
+                  <div class="btn btn-light btn-sm">Follow</div>
                 </div>
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark text-light">
               <div class="row wd-who-to-follow-cell">
                 <div class="col-2 wd-flex-and-center">
-                  <img src="../images/virgin.png" alt="" />
+                  <img
+                    class="rounded-circle"
+                    src="../images/virgin.png"
+                    alt=""
+                  />
                 </div>
                 <div class="col-7">
                   <b>Virgin Galactic</b> &nbsp;
                   <i class="fa fa-check-circle" aria-hidden="true"></i><br />
-                  @virgingalactic
+                  <span class="text-secondary">@virgingalactic</span>
                 </div>
                 <div class="col-3 wd-flex-and-center">
-                  <div class="btn btn-primary">Follow</div>
+                  <div class="btn btn-light btn-sm">Follow</div>
                 </div>
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark text-light">
               <div class="row wd-who-to-follow-cell">
                 <div class="col-2 wd-flex-and-center">
-                  <img src="../images/nasa.png" alt="" />
+                  <img class="rounded-circle" src="../images/nasa.png" alt="" />
                 </div>
                 <div class="col-7">
                   <b>NASA</b> &nbsp;
                   <i class="fa fa-check-circle" aria-hidden="true"></i><br />
-                  @nasa
+                  <span class="text-secondary">@nasa</span>
                 </div>
                 <div class="col-3 wd-flex-and-center">
-                  <div class="btn btn-primary">Follow</div>
+                  <div class="btn btn-light btn-sm">Follow</div>
                 </div>
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item bg-dark text-light">
               <div class="row wd-who-to-follow-cell">
                 <div class="col-2 wd-flex-and-center">
-                  <img src="../images/tesla.jpeg" alt="" />
+                  <img
+                    class="rounded-circle"
+                    src="../images/netflix.jpeg"
+                    alt=""
+                  />
                 </div>
                 <div class="col-7">
-                  <b>Tesla</b> &nbsp;
+                  <b>Netflix</b> &nbsp;
                   <i class="fa fa-check-circle" aria-hidden="true"></i><br />
-                  @tesla
+                  <span class="text-secondary">@netflix</span>
                 </div>
                 <div class="col-3 wd-flex-and-center">
-                  <div class="btn btn-primary">Follow</div>
+                  <div class="btn btn-light btn-sm">Follow</div>
                 </div>
               </div>
             </li>
           </ul>
         </div>
       </div>
+      <!-- <div class="col-1"></div> -->
     </div>
-    <h2>Hiding and showing responsive content</h2>
-    <div class="d-block d-sm-none fa-2x">XS</div>
-    <div class="d-none d-sm-block d-md-none fa-2x">S</div>
-    <div class="d-none d-md-block d-lg-none fa-2x">M</div>
-    <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
-    <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-    <div class="d-none d-xxl-block fa-2x">XXL</div>
   </body>
 </html>

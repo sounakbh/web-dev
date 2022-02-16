@@ -3,11 +3,17 @@
 }
 body {
   background-color: black;
-  /* color: white; */
+}
+
+.wd-color-twitter-blue {
+  color: var(--twitter-blue);
 }
 .wd-navigation-links-container a {
   font-size: 16px;
   background-color: black;
+}
+.wd-navigation-links-container a .d-none {
+  margin-left: 5px;
 }
 .wd-who-to-follow-cell {
   font-size: 13px;
@@ -19,12 +25,10 @@ body {
 }
 
 .wd-who-to-follow-cell .col-3 .btn {
-  /* border: 1px solid red; */
   border-radius: 25px;
 }
 
 .wd-who-to-follow-cell .col-7 {
-  /* border: 1px solid red; */
   padding-left: 0px;
 }
 
@@ -33,7 +37,6 @@ body {
 }
 
 .wd-feed-search-bar {
-  /* border: 1px solid lightgray; */
   border-radius: 25px;
 }
 
@@ -59,6 +62,11 @@ body {
   background-color: var(--twitter-blue);
   color: rgb(248, 248, 248);
 }
+.wd-tweet-btn:hover {
+  color: white;
+  font-size: 1.1em;
+  padding: 5px;
+}
 .wd-explore-feed-img {
   height: 60px;
   width: 60px;
@@ -68,7 +76,6 @@ body {
 }
 .wd-explore-feed-text-container {
   font-size: 13px;
-  /* color: white; */
 }
 .wd-explore-story-container {
   border: 0.5px solid rgb(63, 62, 62);
@@ -78,21 +85,23 @@ body {
 }
 .nav-pills {
   font-size: 13px;
-  display: flex;
+  display: inline-flex;
   font-weight: bolder;
   justify-content: space-between;
-  /* border: 0.5px solid red; */
 }
-/* .wd-tab-highlight {
-  color: white !important;
-  border-bottom: 1px solid blue;
-} */
-.wd-tab-active a {
-  color: white;
-}
+
 .wd-tab-active {
   border-bottom: 5px solid var(--twitter-blue);
 }
-#wd-something > * {
+.wd-override-row > * {
   padding: 0;
+}
+
+.wd-navigation-links-container .list-group-item:hover {
+  background-color: black;
+  font-size: 18px;
+}
+.wd-more-info div span {
+  font-size: 12px;
+  margin-left: 10px;
 }

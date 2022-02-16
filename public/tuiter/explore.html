@@ -15,46 +15,47 @@
   </head>
   <body>
     <!-- <h2>Hiding and showing responsive content</h2> -->
-    <div class="d-block d-sm-none fa-2x">XS</div>
+    <!-- <div class="d-block d-sm-none fa-2x">XS</div>
     <div class="d-none d-sm-block d-md-none fa-2x">S</div>
     <div class="d-none d-md-block d-lg-none fa-2x">M</div>
     <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
     <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
-    <div class="d-none d-xxl-block fa-2x">XXL</div>
+    <div class="d-none d-xxl-block fa-2x">XXL</div> -->
     <div class="container mt-3">
       <div class="row">
         <!-- NAVIGATION LINKS -->
-        <!-- <div class="col-1"></div> -->
-        <div class="col-3 wd-navigation-links-container">
+        <div
+          class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-xs-2 wd-navigation-links-container"
+        >
           <a href="#" class="list-group-item list-group-item-action text-light">
             <i class="fab fa-twitter fa-inverse"></i>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-home fa-inverse"></i> &nbsp;
+            <i class="fa fa-home fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Home</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-hashtag fa-inverse"></i> &nbsp;
+            <i class="fa fa-hashtag fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Explore</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-bell fa-inverse"></i> &nbsp;
+            <i class="fa fa-bell fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Notifications</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-envelope fa-inverse"></i> &nbsp;
+            <i class="fa fa-envelope fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Messages</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-bookmark fa-inverse"></i> &nbsp;
+            <i class="fa fa-bookmark fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Bookmarks</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-list fa-inverse"></i> &nbsp;
+            <i class="fa fa-list fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Lists</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
-            <i class="fa fa-user fa-inverse"></i> &nbsp;
+            <i class="fa fa-user fa-inverse"></i>
             <span class="d-none d-xl-inline d-lg-none"> Profile</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action text-light">
@@ -70,7 +71,9 @@
           </div>
         </div>
         <!-- MAIN FEED -->
-        <div class="col-5 wd-twitter-feed-container">
+        <div
+          class="col-xs-10 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xx-6 wd-twitter-feed-container"
+        >
           <!-- SEARCH BAR -->
           <div class="row">
             <div class="col-10 wd-feed-search-bar bg-dark">
@@ -96,8 +99,8 @@
           <!-- TABS -->
           <div class="row mt-2">
             <ul class="nav nav-pills" role="tablist">
-              <span class="nav-item active">
-                <a class="nav-link text-secondary" href="#">For You</a>
+              <span class="nav-item wd-tab-active">
+                <a class="nav-link text-light" href="#">For You</a>
               </span>
               <span class="nav-item">
                 <a class="nav-link text-secondary" href="#">Trending</a>
@@ -111,13 +114,13 @@
               <span class="nav-item">
                 <a class="nav-link text-secondary" href="#">Sports</a>
               </span>
-              <span class="nav-item wd-tab-active">
-                <a class="nav-link" href="#"> Entertainment </a>
+              <span class="nav-item d-none d-md-inline d-sm-none">
+                <a class="nav-link text-secondary" href="#"> Entertainment </a>
               </span>
             </ul>
           </div>
           <!-- TESLA SPACESHIP IMG -->
-          <div class="row position-relative" id="wd-something">
+          <div class="row position-relative wd-override-row" id="w">
             <div class="wd-main-feed-img-container">
               <img src="../images/spacex_starship.jpeg" alt="SpaceX Ship" />
             </div>
@@ -207,7 +210,7 @@
 
         <!-- FOLLOW RECOMMENDATIONS -->
         <div
-          class="col-4 wd-who-to-follow-container rounded d-none d-lg-inline d-md-none"
+          class="col-xxl-4 col-xl-4 col-lg-4 wd-who-to-follow-container rounded d-none d-lg-inline d-md-none"
         >
           <ul class="list-group">
             <li class="list-group-item bg-dark text-light">
@@ -309,10 +312,25 @@
                 </div>
               </div>
             </li>
+
+            <li class="list-group-item bg-dark wd-color-twitter-blue">
+              Show more
+            </li>
           </ul>
+          <div class="row text-secondary wd-more-info mt-2">
+            <div>
+              <span>Terms of Service </span>
+              <span>Privacy Policy</span>
+              <span>Cookie Policy</span>
+            </div>
+            <div>
+              <span>Ads Info</span>
+              <span>More &#x2026;</span>
+              <span>&copy;2021 Twitter, Inc.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="col-1"></div> -->
     </div>
   </body>
 </html>

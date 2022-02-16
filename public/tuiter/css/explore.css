@@ -105,3 +105,6 @@ body {
   font-size: 12px;
   margin-left: 10px;
 }
+.wd-page-tab-hightlight {
+  font-weight: bolder;
+}

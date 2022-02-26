@@ -7,13 +7,13 @@ const NavigationSidebar = (active) => {
               <!-- continue the rest of the list -->
                   <a class="list-group-item ${
                     active === "Home" ? "active" : ""
-                  }" href="/public/tuiter/HomeScreen/home.html">
+                  }" href="/tuiter/HomeScreen/home.html">
                       <i class="fa fa-home"></i>
                       <span class="d-none d-xl-inline d-lg-none p-1"> Home</span>
                   </a>
                   <a class="list-group-item ${
                     active === "Explore" ? "active" : ""
-                  }" href="/public/tuiter/ExploreScreen/explore.html">
+                  }" href="/tuiter/ExploreScreen/explore.html">
                       <i class="fa fa-hashtag"></i>
                       <span class="d-none d-xl-inline d-lg-none p-1"> Explore</span>
                   </a>

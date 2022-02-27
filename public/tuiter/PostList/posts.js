@@ -25,8 +25,8 @@ export default [
       "Grimes reading Karl Marx following split with world's reichest man Elon musk <a href='#'>trib.al/nx2Gfaq</a>",
     avatarImage: "../../images/day28-selfi-girl.png",
     postImageUrl: "../../images/day49-angler-fish.png",
-    numberOfComments: "4.2k",
-    numberOfRetweets: "3.5k",
-    numberOfLikes: "37.5k",
+    numberOfComments: "965",
+    numberOfRetweets: "2.4k",
+    numberOfLikes: "4k",
   },
 ];

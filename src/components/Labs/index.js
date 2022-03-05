@@ -14,6 +14,7 @@ const Labs = () => {
       <ConditionalOutput />
       <Styles />
       <Classes />
+      <TodoItem />
       <TodoList />
     </>
   );

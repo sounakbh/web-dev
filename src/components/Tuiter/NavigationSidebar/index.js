@@ -1,78 +1,82 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const NavigationSidebar = ({ active = "explore" }) => {
   return (
     <div className="list-group">
-      <a className="list-group-item" href="/public/tuiter">
+      <Link to="/tuiter" className="list-group-item">
         <i className="fab fa-twitter"></i>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Home" ? "active" : ""}`}
-        href="/tuiter/HomeScreen/home.html"
+        to="/tuiter/home"
       >
         <i className="fa fa-home"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Home</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Explore" ? "active" : ""}`}
-        href="/tuiter/ExploreScreen/explore.html"
+        to="/tuiter/explore"
       >
         <i className="fa fa-hashtag"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Explore</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Notifications" ? "active" : ""}`}
-        href="/"
+        to="/"
       >
         <i className="fa fa-bell"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Notifications</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Messages" ? "active" : ""}`}
-        href="/"
+        to="/"
       >
         <i className="fa fa-envelope"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Messages</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Bookmarks" ? "active" : ""}`}
-        href="/"
+        to="/"
       >
         <i className="fa fa-bookmark"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Bookmarks</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Lists" ? "active" : ""}`}
-        href="/"
+        to="/"
       >
         <i className="fa fa-list"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Lists</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "Profile" ? "active" : ""}`}
-        href="/"
+        to="/"
       >
         <i className="fa fa-user"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> Profile</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className={`list-group-item
         ${active === "More" ? "active" : ""}`}
-        href="/"
+        to="/"
       >
         <i className="fas fa-circle"></i>
         <span className="d-none d-xl-inline d-lg-none p-1"> More</span>
-      </a>
+      </Link>
       <div className="d-grid mt-2">
-        <a href="tweet.html" className="btn btn-primary btn-block rounded-pill">
+        <Link
+          to="tweet.html"
+          className="btn btn-primary btn-block rounded-pill"
+        >
           Tweet
-        </a>
+        </Link>
       </div>
     </div>
   );

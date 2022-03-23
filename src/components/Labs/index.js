@@ -4,6 +4,7 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 import TodoItem from "./Todo/TodoItem";
 import TodoList from "./Todo/TodoList";
+import ReduxExamples from "./redux-examples";
 import { Link } from "react-router-dom";
 
 const Labs = () => {
@@ -16,6 +17,7 @@ const Labs = () => {
       <Classes />
       <TodoItem />
       <TodoList />
+      <ReduxExamples />
     </>
   );
 };

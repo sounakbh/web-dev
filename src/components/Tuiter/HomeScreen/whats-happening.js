@@ -34,22 +34,22 @@ const WhatsHappening = () => {
         <hr />
         <div>
           <i
-            class="fa fa-picture-o text-primary"
+            className="fa fa-picture-o text-primary"
             aria-hidden="true"
             style={{ marginRight: "25px", fontSize: "20px" }}
           ></i>
           <i
-            class="fa fa-line-chart text-primary"
+            className="fa fa-line-chart text-primary"
             aria-hidden="true"
             style={{ marginRight: "25px", fontSize: "20px" }}
           ></i>
           <i
-            class="fa fa-smile-o text-primary"
+            className="fa fa-smile-o text-primary"
             aria-hidden="true"
             style={{ marginRight: "25px", fontSize: "20px" }}
           ></i>
           <i
-            class="fa fa-calendar-check-o text-primary"
+            className="fa fa-calendar-check-o text-primary"
             aria-hidden="true"
             style={{ marginRight: "25px", fontSize: "20px" }}
           ></i>

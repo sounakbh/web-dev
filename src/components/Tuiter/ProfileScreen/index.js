@@ -1,10 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const ProfileScreen = () => {
   const profile = useSelector((state) => state.profile);
   return (
     <div>
-      <h1>Profile</h1>
       <div className="row">
         <div
           className="col-1"
@@ -14,7 +14,7 @@ const ProfileScreen = () => {
         </div>
         <div className="col-11">
           <h5>
-            <b>{profile.firstName + " " + profile.lastName}</b>
+            <b>{profile.name}</b>
           </h5>
 
           <span>{profile.totalTweets} Tweets</span>
@@ -46,17 +46,21 @@ const ProfileScreen = () => {
           class="btn btn-block btn-outline-dark rounded-pill"
           style={{ float: "right" }}
         >
-          <b>Edit Profile</b>
+          <Link
+            to="/tuiter/edit-profile"
+            style={{ textDecoration: "none", color: "#FAF9F6" }}
+          >
+            <b>Edit Profile</b>
+          </Link>
         </button>
       </div>
       <div className="row" style={{ marginTop: "60px" }}>
         <h5>
-          <b>{profile.firstName + " " + profile.lastName}</b>
+          <b>{profile.name}</b>
         </h5>
         <span>@{profile.handle}</span> <br /> <br />
         <span style={{ color: "white" }}>{profile.bio}</span>
-        <br /> <br />
-        <span>
+        <div style={{ marginTop: "10px" }}>
           <i class="fa fa-map-marker" aria-hidden="true"></i> {profile.location}{" "}
           &nbsp; &nbsp; &nbsp; &nbsp;
           <i class="fa fa-birthday-cake" aria-hidden="true"></i>{" "}
@@ -64,8 +68,8 @@ const ProfileScreen = () => {
           &nbsp; &nbsp; &nbsp; &nbsp;
           <i class="fa fa-calendar-check-o" aria-hidden="true"></i>{" "}
           {profile.dateJoined}
-        </span>
-        <span>
+        </div>
+        <span style={{ marginTop: "10px" }}>
           <b className="btn-light">{profile.followingCount}</b> &nbsp;Following
           &nbsp; &nbsp; <b className="btn-light">{profile.followersCount}</b>{" "}
           &nbsp;Followers{" "}

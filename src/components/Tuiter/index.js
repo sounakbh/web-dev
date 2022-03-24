@@ -5,25 +5,19 @@ import { Outlet } from "react-router-dom";
 import HomeScreen from "./HomeScreen/HomeScreen";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import NavigationSidebar from "./NavigationSidebar";
-import whoReducer from "./reducers/who-reducer";
 import WhoToFollowList from "./WhoToFollowList";
+import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
 import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
+
 const reducer = combineReducers({
   tuits: tuitsReducer,
   who: whoReducer,
+  profile: profileReducer,
 });
 const store = createStore(reducer);
-// const Tuiter = () => {
-//   return (
-//     <>
-//       <HomeScreen />
-//       {/* <ExploreScreen /> */}
-//     </>
-//   );
-// };
-// export default Tuiter;
 
 const Tuiter = () => {
   return (

@@ -9,6 +9,7 @@ import Labs from "./components/Labs/index.js";
 import Tuiter from "./components/Tuiter/index.js";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
 import HomeScreen from "./components/Tuiter/HomeScreen";
+import ProfileScreen from "./components/Tuiter/ProfileScreen";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -22,8 +23,7 @@ function App() {
             <Route path="tuiter" element={<Tuiter />}>
               <Route index element={<HomeScreen />} />
               <Route path="explore" element={<ExploreScreen />} />
-              {/* <Route path="notifications" 
-                    element={<NotificationScreen/>}/> */}
+              <Route path="profile" element={<ProfileScreen />} />
             </Route>
           </Route>
         </Routes>

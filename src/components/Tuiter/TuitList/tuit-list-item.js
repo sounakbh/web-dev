@@ -12,8 +12,6 @@ const TuitListItem = ({ tuit }) => {
     <li
       className="list-group-item"
       style={{
-        // border: "1px solid rgba(255,255,255,.25)",
-        // backgroundColor: "black",
         borderRadius: "none",
       }}
     >
@@ -48,7 +46,6 @@ const TuitListItem = ({ tuit }) => {
               className="fas fa-remove fa 
                   fa-pull-right"
             ></i>
-            {/* <span style={{ float: "right" }}>&#10005;</span> */}
           </div>
           <div dangerouslySetInnerHTML={{ __html: tuit.tuit }} />
           <div className="mt-2">
@@ -66,26 +63,6 @@ const TuitListItem = ({ tuit }) => {
             ) : (
               ""
             )}
-            {/* {post.postContent ? (
-              <div
-                className="pt-2"
-                style={{
-                  padding: "20px",
-                  borderRadius: "0 0 10px 10px",
-                  border: "1px solid rgba(255,255,255,.25)",
-                  borderTop: "none",
-                }}
-              >
-                {post.postContent.postHeading} <br />
-                <span className="text-muted">
-                  {post.postContent.postContent} <br />
-                  <i className="fa fa-link" aria-hidden="true"></i>
-                  &nbsp; {post.postContent.postSiteLink}
-                </span>
-              </div>
-            ) : (
-              ``
-            )} */}
 
             <div className="p-2 d-flex justify-content-between text-muted">
               <div style={{ color: "#FAF9F6" }}>

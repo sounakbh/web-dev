@@ -29,10 +29,11 @@ const EditProfileScreen = () => {
             onClick={() => navigate("/tuiter/profile")}
             class="fa fa-times"
             aria-hidden="true"
+            style={{ cursor: "pointer" }}
           ></i>
         </div>
         <div className="col-11" style={{ marginBottom: "10px" }}>
-          <span style={{ fontSize: "25px" }}>
+          <span style={{ fontSize: "25px", color: "white" }}>
             <b>Edit Profile</b>
           </span>
           <button
@@ -146,8 +147,6 @@ const EditProfileScreen = () => {
         />
         <label for="dob">Date of Birth</label>
       </div>
-
-      {/* <div className="row">{profile.bio}</div> */}
     </div>
   );
 };

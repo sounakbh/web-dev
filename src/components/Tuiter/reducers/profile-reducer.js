@@ -1,7 +1,7 @@
 const profileReducer = (
   state = {
-    name: "Jose Annunziato",
-    handle: "jannunzi",
+    name: "Kamado Tanjiro",
+    handle: "tanjirok",
     profilePicture: "../../../images/day68-happy-cat.png",
     bannerPicture: "../../../images/day8-printer.png",
     bio: "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",

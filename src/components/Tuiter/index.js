@@ -1,9 +1,5 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-// import NavigationSidebar from "./navigation-sidebar";
-// import "./tuiter.css";
-import HomeScreen from "./HomeScreen/HomeScreen";
-import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 import whoReducer from "./reducers/who-reducer";

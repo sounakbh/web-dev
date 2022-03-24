@@ -25,21 +25,21 @@
     },
     {
     "_id": "567",
-    "topic": "Netflix",
+    "topic": "Realtivity Space",
     "postedBy": {
-    "username": "Netflix"
+    "username": "Realtivity Space"
     },
     "liked": false,
     "verified": true,
-    "handle": "netflix",
+    "handle": "realtivitySpace",
     "title": "",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "attachments": {
     "image": "../../../images/day99-pirate-boat.png"
     },
     "time": "last month",
-    "logoImage": "../../../images/netflix.jpeg",
-    "avatarImage": "../../../images/netflix.jpeg",
+    "logoImage": "../../../images/relativity_space.jpeg",
+    "avatarImage": "../../../images/relativity_space.jpeg",
     "tuits": "120K",
     "stats": {
     "comments": 123,

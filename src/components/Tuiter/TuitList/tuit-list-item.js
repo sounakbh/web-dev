@@ -23,8 +23,8 @@ const TuitListItem = ({ tuit }) => {
             style={{
               marginTop: "10px",
               width: "150%",
-              borderRadius: "50%",
               objectFit: "cover",
+              borderRadius: "50%",
             }}
           />
         </div>

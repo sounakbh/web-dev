@@ -1,23 +1,31 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const ProfileScreen = () => {
   const profile = useSelector((state) => state.profile);
+  let navigate = useNavigate();
   return (
     <div>
       <div className="row">
         <div
           className="col-1"
-          style={{ display: "flex", alignItems: "center", fontSize: "30px" }}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            fontSize: "30px",
+            cursor: "pointer",
+          }}
+          onClick={() => navigate("/tuiter/")}
         >
           &#8592;
         </div>
-        <div className="col-11">
-          <h5>
+        <div className="col-11" style={{ fontSize: "0" }}>
+          <div style={{ fontSize: "30px", height: "35px", color: "white" }}>
             <b>{profile.name}</b>
-          </h5>
-
-          <span>{profile.totalTweets} Tweets</span>
+          </div>{" "}
+          <br />
+          <div style={{ fontSize: "15px" }}>{profile.totalTweets} Tweets</div>
         </div>
       </div>
       <div className="row" style={{ position: "relative" }}>
@@ -70,12 +78,12 @@ const ProfileScreen = () => {
           {profile.dateJoined}
         </div>
         <span style={{ marginTop: "10px" }}>
-          <b className="btn-light">{profile.followingCount}</b> &nbsp;Following
-          &nbsp; &nbsp; <b className="btn-light">{profile.followersCount}</b>{" "}
+          <b style={{ color: "white" }}>{profile.followingCount}</b>{" "}
+          &nbsp;Following &nbsp; &nbsp;{" "}
+          <b style={{ color: "white" }}>{profile.followersCount}</b>{" "}
           &nbsp;Followers{" "}
         </span>
       </div>
-      {/* <div className="row">{profile.bio}</div> */}
     </div>
   );
 };

@@ -4,25 +4,32 @@ import React from "react";
 import { useSelector } from "react-redux";
 // const WhoToFollowList = () => {
 //   return (
-//     <ul className="list-group">
-//       <li className="list-group-item">
-//         <div className="row" style={{ fontSize: "13px" }}>
-//           <b>Who to follow</b>
-//         </div>
-//       </li>
-//       {Who.map((who) => (
-//         <WhoToFollowListItem who={who} />
-//       ))}
-//     </ul>
+// <ul className="list-group">
+//   <li className="list-group-item">
+//     <div className="row" style={{ fontSize: "13px" }}>
+//       <b>Who to follow</b>
+//     </div>
+//   </li>
+//   {Who.map((who) => (
+//     <WhoToFollowListItem who={who} />
+//   ))}
+// </ul>
 //   );
 // };
 
 const WhoToFollowList = () => {
-  const who = useSelector((state) => state);
+  const who = useSelector((state) => state.who);
   return (
-    <div>
-      <h1>Who To Foollow!!</h1>
-    </div>
+    <ul className="list-group">
+      <li className="list-group-item">
+        <div className="row" style={{ fontSize: "13px" }}>
+          <b>Who to follow</b>
+        </div>
+      </li>
+      {Who.map((who) => (
+        <WhoToFollowListItem who={who} />
+      ))}
+    </ul>
   );
 };
 

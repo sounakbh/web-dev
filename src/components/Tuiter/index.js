@@ -7,9 +7,14 @@ import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import NavigationSidebar from "./NavigationSidebar";
 import whoReducer from "./reducers/who-reducer";
 import WhoToFollowList from "./WhoToFollowList";
-import { createStore } from "redux";
+import tuitsReducer from "./reducers/tuits-reducer";
+import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
-const store = createStore(whoReducer);
+const reducer = combineReducers({
+  tuits: tuitsReducer,
+  who: whoReducer,
+});
+const store = createStore(reducer);
 // const Tuiter = () => {
 //   return (
 //     <>

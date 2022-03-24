@@ -8,7 +8,7 @@ import HelloWorld from "./components//HelloWorld";
 import Labs from "./components/Labs/index.js";
 import Tuiter from "./components/Tuiter/index.js";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/ExploreScreen";
-import HomeScreen from "./components/Tuiter/HomeScreen/HomeScreen";
+import HomeScreen from "./components/Tuiter/HomeScreen";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {

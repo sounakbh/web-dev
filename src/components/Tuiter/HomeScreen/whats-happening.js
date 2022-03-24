@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-
+import { useDispatch } from "react-redux";
 const WhatsHappening = () => {
-  let [whatsHappening, setWhatsHappening] = useState("");
+  const dispatch = useDispatch();
+  const [whatsHappening, setWhatsHappening] = useState("");
   const tuitClickHandler = () => {
-    console.log(whatsHappening);
+    dispatch({ type: "create-tuit", tuit: whatsHappening });
   };
   return (
     <div className="row">
@@ -23,7 +24,12 @@ const WhatsHappening = () => {
           value={whatsHappening}
           onChange={(event) => setWhatsHappening(event.target.value)}
           placeholder="What's happening?"
-          style={{ width: "100%", backgroundColor: "black", border: "none" }}
+          style={{
+            width: "100%",
+            backgroundColor: "black",
+            border: "none",
+            color: "white",
+          }}
         ></textarea>
         <hr />
         <div>

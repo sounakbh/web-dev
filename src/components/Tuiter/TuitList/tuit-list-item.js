@@ -1,6 +1,13 @@
 import React from "react";
+import TuitStats from "./tuit-stats";
+import { useDispatch } from "react-redux";
 
 const TuitListItem = ({ tuit }) => {
+  const dispatch = useDispatch();
+  const deleteTuit = (tuit) => {
+    dispatch({ type: "delete-tuit", tuit });
+  };
+
   return (
     <li
       className="list-group-item"
@@ -36,7 +43,12 @@ const TuitListItem = ({ tuit }) => {
             </span>{" "}
             &nbsp;
             <span className="text-muted">@{tuit.handle}</span>
-            <span style={{ float: "right" }}>&#10005;</span>
+            <i
+              onClick={() => deleteTuit(tuit)}
+              className="fas fa-remove fa 
+                  fa-pull-right"
+            ></i>
+            {/* <span style={{ float: "right" }}>&#10005;</span> */}
           </div>
           <div dangerouslySetInnerHTML={{ __html: tuit.tuit }} />
           <div className="mt-2">
@@ -92,22 +104,7 @@ const TuitListItem = ({ tuit }) => {
                 ></i>
                 {tuit.stats.retuits}
               </div>
-              <div style={{ color: "#FAF9F6" }}>
-                {tuit.liked ? (
-                  <i
-                    className="fa fa-heart"
-                    aria-hidden="true"
-                    style={{ marginRight: "5px", color: "red" }}
-                  ></i>
-                ) : (
-                  <i
-                    className="fa fa-heart"
-                    aria-hidden="true"
-                    style={{ marginRight: "5px" }}
-                  ></i>
-                )}
-                {tuit.stats.likes}
-              </div>
+              <TuitStats tuit={tuit} />
               <div style={{ color: "#FAF9F6" }}>
                 <i className="fa fa-upload" aria-hidden="true"></i>
               </div>

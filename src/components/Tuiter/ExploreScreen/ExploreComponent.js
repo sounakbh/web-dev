@@ -41,7 +41,7 @@ const ExploreComponent = () => {
             alignItems: "center",
           }}
         >
-          <a href="#">
+          <a href="./for-you.html">
             <i className="fa fa-inverse fa-cog fa-2x" aria-hidden="true"></i>
           </a>
         </div>
@@ -58,7 +58,7 @@ const ExploreComponent = () => {
           </a>
         </span>
         <span className="nav-item">
-          <a className="nav-link " href="#">
+          <a className="nav-link " href="./covid-19.html">
             <small>COVID-19</small>
           </a>
         </span>

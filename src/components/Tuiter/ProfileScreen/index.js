@@ -33,6 +33,7 @@ const ProfileScreen = () => {
         <img
           src={profile.bannerPicture}
           style={{ height: "250px", objectFit: "cover" }}
+          alt="Banner Picture"
         />
         {/* Profile Photo */}
         <img

@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
 
-const TuitListItem = ({ tuit }) => {
-  const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({ type: "delete-tuit", tuit });
-  };
+const TuitListItem = ({ tuit, deleteTuit }) => {
+  // const dispatch = useDispatch();
+  // const deleteTuit = (tuit) => {
+  //   dispatch({ type: "delete-tuit", tuit });
+  // };
 
   return (
     <li
@@ -42,7 +42,10 @@ const TuitListItem = ({ tuit }) => {
             &nbsp;
             <span className="text-muted">@{tuit.handle}</span>
             <i
-              onClick={() => deleteTuit(tuit)}
+              onClick={() => {
+                console.log(tuit);
+                return deleteTuit(tuit);
+              }}
               className="fas fa-remove fa 
                   fa-pull-right"
             ></i>

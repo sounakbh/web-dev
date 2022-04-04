@@ -8,6 +8,7 @@ import {
 const tuitsReducer = (state = [], action) => {
   switch (action.type) {
     case FIND_ALL_TUITS:
+      console.log("Find All Tuits Reducer reached!");
       state = action.tuits;
       return action.tuits;
 
@@ -28,6 +29,7 @@ const tuitsReducer = (state = [], action) => {
         },
       };
       return [newTuit, ...state];
+
     case DELETE_TUIT:
       return state.filter((tuit) => tuit._id !== action.tuit._id);
 

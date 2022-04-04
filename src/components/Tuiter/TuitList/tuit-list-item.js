@@ -3,7 +3,7 @@ import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
 
 const TuitListItem = ({ tuit, deleteTuit }) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   // const deleteTuit = (tuit) => {
   //   dispatch({ type: "delete-tuit", tuit });
   // };
@@ -44,7 +44,7 @@ const TuitListItem = ({ tuit, deleteTuit }) => {
             <i
               onClick={() => {
                 console.log(tuit);
-                return deleteTuit(tuit);
+                return deleteTuit(tuit, dispatch);
               }}
               className="fas fa-remove fa 
                   fa-pull-right"

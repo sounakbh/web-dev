@@ -12,7 +12,6 @@ const TuitList = () => {
 
   return (
     <ul className="list-group">
-      {console.log(tuits)}
       {tuits.map &&
         tuits.map((tuit) => (
           <TuitListItem key={tuit._id} tuit={tuit} deleteTuit={deleteTuit} />

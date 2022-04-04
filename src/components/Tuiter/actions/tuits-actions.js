@@ -14,10 +14,18 @@ export const findAllTuits = async (dispatch) => {
 };
 export const updateTuit = async (dispatch, tuit) => {};
 export const deleteTuit = async (tuit, dispatch) => {
-  console.log(tuit);
+  //   console.log(tuit);
   const response = await service.deleteTuit(tuit);
   dispatch({
     type: DELETE_TUIT,
+    tuit,
+  });
+};
+
+export const createTuit = async (tuit, dispatch) => {
+  const response = await service.createTuit(tuit);
+  dispatch({
+    type: CREATE_TUIT,
     tuit,
   });
 };

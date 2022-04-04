@@ -32,7 +32,7 @@ const TuitListItem = ({ tuit, deleteTuit }) => {
         <div className="col-11" style={{ paddingLeft: "15px" }}>
           <div>
             <span>
-              <b>{tuit.postedBy.username}</b> &nbsp;
+              <b>{tuit.postedBy?.username}</b> &nbsp;
               {tuit.verified ? (
                 <i className="fa fa-check-circle" aria-hidden="true"></i>
               ) : (
@@ -74,7 +74,7 @@ const TuitListItem = ({ tuit, deleteTuit }) => {
                   aria-hidden="true"
                   style={{ marginRight: "5px" }}
                 ></i>
-                {tuit.stats.comments}
+                {tuit.stats?.comments}
               </div>
               <div style={{ color: "#FAF9F6" }}>
                 <i
@@ -82,7 +82,7 @@ const TuitListItem = ({ tuit, deleteTuit }) => {
                   aria-hidden="true"
                   style={{ marginRight: "5px" }}
                 ></i>
-                {tuit.stats.retuits}
+                {tuit.stats?.retuits}
               </div>
               <TuitStats tuit={tuit} />
               <div style={{ color: "#FAF9F6" }}>

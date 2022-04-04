@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { createTuit } from "../actions/tuits-actions";
 const WhatsHappening = () => {
   const dispatch = useDispatch();
   const [whatsHappening, setWhatsHappening] = useState("");
-  const tuitClickHandler = () => {
-    dispatch({ type: "create-tuit", tuit: whatsHappening });
-  };
+  // const tuitClickHandler = () => {
+  //   dispatch({ type: "create-tuit", tuit: whatsHappening });
+  // };
   return (
     <div className="row">
       <div className="col-2">
@@ -56,7 +57,7 @@ const WhatsHappening = () => {
           <button
             className="btn btn-primary btn-block rounded-pill"
             style={{ float: "right" }}
-            onClick={tuitClickHandler}
+            onClick={() => createTuit(whatsHappening, dispatch)}
           >
             Tweet
           </button>

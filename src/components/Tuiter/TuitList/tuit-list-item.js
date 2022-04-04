@@ -4,9 +4,6 @@ import { useDispatch } from "react-redux";
 
 const TuitListItem = ({ tuit, deleteTuit }) => {
   const dispatch = useDispatch();
-  // const deleteTuit = (tuit) => {
-  //   dispatch({ type: "delete-tuit", tuit });
-  // };
 
   return (
     <li

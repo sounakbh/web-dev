@@ -3,6 +3,7 @@ import {
   CREATE_TUIT,
   DELETE_TUIT,
   FIND_ALL_TUITS,
+  UPDATE_TUIT,
 } from "../actions/tuits-actions";
 
 const tuitsReducer = (state = [], action) => {
@@ -10,24 +11,6 @@ const tuitsReducer = (state = [], action) => {
     case FIND_ALL_TUITS:
       state = action.tuits;
       return action.tuits;
-
-    // case CREATE_TUIT:
-    //   return [...state, action.newTuit];
-
-    // case "create-tuit":
-    //   const newTuit = {
-    //     tuit: action.tuit,
-    //     _id: new Date().getTime() + "",
-    //     postedBy: {
-    //       username: "ReactJS",
-    //     },
-    //     stats: {
-    //       retuits: 111,
-    //       likes: 222,
-    //       replies: 333,
-    //     },
-    //   };
-    //   return [newTuit, ...state];
 
     case CREATE_TUIT:
       console.log("Create Tuit Reducer Reached!");
@@ -40,14 +23,21 @@ const tuitsReducer = (state = [], action) => {
         stats: {
           retuits: 111,
           likes: 222,
+          dislikes: 0,
           replies: 333,
         },
       };
       return [newTuit, ...state];
-    // console.log(action);
 
     case DELETE_TUIT:
       return state.filter((tuit) => tuit._id !== action.tuit._id);
+
+    case UPDATE_TUIT:
+      state = state.map((tuit) =>
+        tuit._id === action.tuit._id ? action.tuit : tuit
+      );
+      console.log(state);
+      return state;
 
     case "like-tuit":
       return state.map((tuit) => {

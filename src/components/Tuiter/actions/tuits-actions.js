@@ -12,7 +12,14 @@ export const findAllTuits = async (dispatch) => {
     tuits,
   });
 };
-export const updateTuit = async (dispatch, tuit) => {};
+export const updateTuit = async (dispatch, tuit) => {
+  const status = await service.updateTuit(tuit);
+  dispatch({
+    type: UPDATE_TUIT,
+    tuit,
+  });
+};
+
 export const deleteTuit = async (tuit, dispatch) => {
   //   console.log(tuit);
   const response = await service.deleteTuit(tuit);

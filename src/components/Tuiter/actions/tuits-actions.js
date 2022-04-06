@@ -21,7 +21,6 @@ export const updateTuit = async (dispatch, tuit) => {
 };
 
 export const deleteTuit = async (tuit, dispatch) => {
-  //   console.log(tuit);
   const response = await service.deleteTuit(tuit);
   dispatch({
     type: DELETE_TUIT,
@@ -30,9 +29,25 @@ export const deleteTuit = async (tuit, dispatch) => {
 };
 
 export const createTuit = async (tuit, dispatch) => {
-  const response = await service.createTuit(tuit);
+  const newTuit = {
+    tuit: tuit,
+    _id: new Date().getTime() + "",
+    postedBy: {
+      username: "ReactJS",
+    },
+    stats: {
+      retuits: 111,
+      likes: 222,
+      dislikes: 0,
+      replies: 333,
+    },
+    handle: "ReactJS",
+    logoImage: "../../../images/react.png",
+    avatarImage: "../../../images/react.png",
+  };
+  const response = await service.createTuit(newTuit);
   dispatch({
     type: CREATE_TUIT,
-    tuit,
+    newTuit,
   });
 };

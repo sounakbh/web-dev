@@ -13,21 +13,7 @@ const tuitsReducer = (state = [], action) => {
       return action.tuits;
 
     case CREATE_TUIT:
-      console.log("Create Tuit Reducer Reached!");
-      const newTuit = {
-        tuit: action.tuit,
-        _id: new Date().getTime() + "",
-        postedBy: {
-          username: "ReactJS",
-        },
-        stats: {
-          retuits: 111,
-          likes: 222,
-          dislikes: 0,
-          replies: 333,
-        },
-      };
-      return [newTuit, ...state];
+      return [action.newTuit, ...state];
 
     case DELETE_TUIT:
       return state.filter((tuit) => tuit._id !== action.tuit._id);

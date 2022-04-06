@@ -40,7 +40,6 @@ const TuitListItem = ({ tuit, deleteTuit }) => {
             <span className="text-muted">@{tuit.handle}</span>
             <i
               onClick={() => {
-                console.log(tuit);
                 return deleteTuit(tuit, dispatch);
               }}
               className="fas fa-remove fa 

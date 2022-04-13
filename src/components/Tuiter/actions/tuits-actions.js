@@ -31,7 +31,6 @@ export const deleteTuit = async (tuit, dispatch) => {
 export const createTuit = async (tuit, dispatch) => {
   const newTuit = {
     tuit: tuit,
-    _id: new Date().getTime() + "",
     postedBy: {
       username: "ReactJS",
     },

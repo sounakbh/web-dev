@@ -11,7 +11,6 @@ const TuitStats = ({ tuit }) => {
       <span
         style={{ color: "#FAF9F6" }}
         onClick={() => {
-          console.log("Update Tuit clicked!");
           tuit.stats.likes += 1;
           return updateTuit(dispatch, tuit);
         }}
